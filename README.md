@@ -13,7 +13,7 @@ Run the container
 docker run -i --name playwright-mcp -p 8931:8931 -p 3000:3000 -p 6274:6274 --rm docker-playwright-mcp:latest
 ```
 
-Start the server as the VNC enabled user:
+[Optional] Start the server as the VNC enabled user (if running outside of vscode. In vscode, just start the mcp server configured in settings):
 ```bash
 docker exec -u abc -w /app playwright-mcp './start-server.sh'
 ```

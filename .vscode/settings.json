@@ -4,9 +4,19 @@
     "github.copilot.chat.agent.thinkingTool": true,
     "mcp": {
         "servers": {
-            "playwright": {
+            "playwright-docker": {
+                "command": "docker",
+                "args": [
+                   "exec",
+                   "-u",
+                   "abc",
+                   "-w",
+                   "/app",
+                   "playwright-mcp",
+                   "./start-server.sh",
+                ],
                 "type": "sse",
-                 "url": "http://localhost:8931/sse"
+                "url": "http://localhost:8931/sse"
             }
         }
     },
