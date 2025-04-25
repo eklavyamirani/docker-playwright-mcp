@@ -1,0 +1,13 @@
+{
+    "chat.tools.autoApprove": true,
+    "chat.agent.enabled": true,
+    "github.copilot.chat.agent.thinkingTool": true,
+    "mcp": {
+        "servers": {
+            "playwright": {
+                "type": "sse",
+                 "url": "http://localhost:8931/sse"
+            }
+        }
+    },
+}
